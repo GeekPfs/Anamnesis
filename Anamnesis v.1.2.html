@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="description" content="Anamnesis is a solo journaling game about self-discovery, reflection, and identity.Play as an individual who has woken up with memory loss. You do not remember who you are, where you are, or what you care about.Draw tarot cards to fill the blank spaces of your past and learn more about your present." />
+  <title>Anamnesis</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Anamnesis</h1>
+</header>
+<h1 id="anamnesis">Anamnesis</h1>
+<p><strong><em>Anamnesis</em></strong> <strong>(<em>n</em>)</strong></p>
+<p>\ ˌa-ˌnam-ˈnē-səs \</p>
+<blockquote>
+<p>1. a remembrance of the past.</p>
+<p>2. <em>Platonism</em>. the recollection of innate knowledge from a
+previous existence.</p>
+</blockquote>
+<h2 id="what-is-anamnesis">What Is Anamnesis?</h2>
+<p>Anamnesis is a solo journaling game about self-discovery, reflection,
+and identity.</p>
+<p>You play as an individual who has woken up with memory loss. You do
+not remember who you are, where you are, or what you care about.</p>
+<p>As you draw tarot cards, you fill the blank spaces of your past, and
+learn more about your present.</p>
+<p>To play, you need a deck of tarot cards and a way to record your
+thoughts (pen &amp; paper, audio recording, etc.).</p>
+<h3 id="safety">Safety</h3>
+<p>While the prompts in Anamnesis are not dark or frightening, its
+themes may lead you to journal about serious topics. If the content of
+your journaling ever becomes too heavy or disturbing, prioritize your
+mental health and step back from the game. You can always revisit the
+game later or make changes to the narrative.</p>
+<p>If you ever draw a card that makes you uncomfortable, or that you do
+not want to journal about for any reason, discard it and draw a
+different card.</p>
+<h3 id="how-to-play">How To Play</h3>
+<p>Separate the tarot cards into five decks: The 22 Major Arcana, The
+Pentacles, The Swords, The Cups, and The Wands.</p>
+<p>Shuffle each deck. Set aside the four Minor Arcana decks.</p>
+<p>Draw one card from the Major Arcana deck.</p>
+<p>This card is your <strong>Shadow</strong> and represents who you were
+in your past. Keep your Shadow face-up next to you. Use this card as a
+guide for uncovering your past.</p>
+<p>There are five Acts. Each Act uses a different deck.</p>
+<ol type="1">
+<li>At the beginning of an Act, draw three cards from its corresponding
+deck.</li>
+<li>Place the three cards face-down in front of you.</li>
+<li>Flip over the first card. Read the prompt associated with the
+card.</li>
+<li>Make a journal entry. Remember your Shadow.</li>
+<li>Flip over the next card. Continue until you have made journal
+entries for all three cards; then, move onto the next Act.</li>
+</ol>
+<p>After you read a prompt, draw from the Major Arcana deck. Use this
+card to answer the questions in the prompt. For example, a prompt might
+be the following:</p>
+<blockquote>
+<p>“You talked to a friend yesterday. Who was this friend? What was your
+conversation about?”</p>
+</blockquote>
+<p>For this prompt, the <strong>Major Arcana</strong> you draw
+represents the friend you spoke with, and/or the topic of
+conversation.</p>
+<p>At the end of each Act, shuffle the Major Arcana cards back into the
+deck.</p>
+<p><strong>How you interpret the Major Arcana cards is up to
+you.</strong> You could use the traditional meaning of the cards as
+found in tarot guides, or you could find inspiration from the name or
+design of the card. <strong>There is no wrong way to interpret the
+cards.</strong></p>
+<dl>
+<dt><strong>Alternative methods of play</strong></dt>
+<dd>
+<p>Flip over all three cards at once. Make a single journal entry for
+the entire Act.</p>
+</dd>
+<dd>
+<p>Draw three Major Arcana at the beginning of the Act. Choose which
+Major Arcana goes with which prompt.</p>
+</dd>
+</dl>
+<h3 id="example-of-play-1">Example of Play #1</h3>
+<p>Robyn starts playing Act I, which is associated with Pentacles. They
+draw three cards from the Deck of Pentacles and lay the cards face-down
+in front of them. They flip over the first card, which is the Ace of
+Pentacles. The prompt for this card is:</p>
+<blockquote>
+<p>“You take a moment to familiarize yourself with your surroundings.
+Where are you?”</p>
+</blockquote>
+<p>Robyn draws a card from the Major Arcana deck. They draw The Moon.
+Robyn decides they want to use the traditional meanings of tarot cards,
+so they consult a tarot guide which says The Moon can symbolize danger
+and darkness, among other things.</p>
+<p>Robyn wants their game to take place in a fantasy setting. With this
+information, Robyn writes the following journal entry:</p>
+<blockquote>
+<p>I awaken with a splitting headache, laying face up on a cobblestone
+road. The sky above is pitch-black and a memory prods at the edges of my
+mind –- a memory of when the sun winked out during my childhood, causing
+panic in the streets. Before I can dig up the details of the memory, a
+dark shape rears above me. I roll to the side, narrowly avoiding the
+hoof that clops down against stone. The hoof belongs to a gurrit, a
+tamed beast of red shaggy fur and many eyes that gleam in the dark. The
+carriage driver shakes his fist as I stumble down the nearest
+alleyway.</p>
+</blockquote>
+<h3 id="example-of-play-2">Example of Play #2</h3>
+<p>Yolanda starts playing Act II, which is associated with Swords. She
+flips over one of the cards in front of her: the Two of Swords. She
+reads the prompt:</p>
+<blockquote>
+<p>“Your eyes are drawn to a statue. What is this statue of? Which
+emotions does it stir in you?”</p>
+</blockquote>
+<p>She next draws a card from the Major Arcana deck: The Empress.
+Yolanda prefers to interpret the cards her own way rather than use the
+traditional tarot meanings. The face of the card shows a woman in a fine
+dress wearing a crown, leaning against a large pillow.</p>
+<p>Yolanda’s game has involved political intrigue, so she decides to
+interpret the card literally. She writes the following journal
+entry:</p>
+<blockquote>
+<p>I walk out of the courthouse and begin squeezing my way through the
+crowded street. My feet stop instinctively before I can process what’s
+in front of me. In the center of the square is a statue, no fewer than
+10 feet tall, depicting a woman with luscious, flowing hair. She wears a
+crown on her head and holds a jeweled scepter. I don’t need to read the
+plaque to remember who she is: Queen Ophelia. She recently came into
+power after her father, the King, passed away. Something inside me burns
+as I look over the statue, and I recognize the feeling as deep respect
+and affection… but why?</p>
+</blockquote>
+<hr />
+<p style="text-align: center;">
+<strong>when you are ready</strong>
+</p>
+<p style="text-align: center;">
+<strong>take a deep breath</strong>
+</p>
+<p style="text-align: center;">
+<strong>and wake up</strong>
+</p>
+<hr />
+<h2 id="act-1-pentacles">Act 1: Pentacles</h2>
+<p>You wake up in an unfamiliar place, seemingly within a town or city.
+You cannot remember who you are or why you are here. All you know for
+certain is that you are not in your home.</p>
+<p><em>Draw three cards from the Deck of Pentacles.</em></p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ace</strong></td>
+<td style="text-align: left;">You take a moment to familiarize yourself
+with your surroundings. Where are you?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Two</strong></td>
+<td style="text-align: left;">You look down at the clothes on your body.
+What are you wearing? How do you feel about the way you look?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Three</strong></td>
+<td style="text-align: left;">You open your mouth and hear yourself
+speak. What is your voice like?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Four</strong></td>
+<td style="text-align: left;">When you look over your body, you notice a
+tattoo on your skin. What is this tattoo? Where is it located?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Five</strong></td>
+<td style="text-align: left;">You take a deep breath and smell something
+in the air. What is this scent? Does it trigger any memories?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Six</strong></td>
+<td style="text-align: left;">There is someone at your side. Who is this
+person? What do they say to you?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Seven</strong></td>
+<td style="text-align: left;">There is a word on the tip of your tongue.
+Which word is this?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Eight</strong></td>
+<td style="text-align: left;">Your hand closes around a memento in your
+pocket. What is this memento? How does it make you feel?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Nine</strong></td>
+<td style="text-align: left;">You realize you have an intense craving
+for something. What are you craving?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Ten</strong></td>
+<td style="text-align: left;">When you focus, you can grasp the edges of
+a hazy memory from just before you fell unconscious. What do you
+remember?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Page</strong></td>
+<td style="text-align: left;">Despite your memory loss, someone’s face
+sticks clearly in your mind. Who is this person? Which feelings does
+their face evoke?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Knight</strong></td>
+<td style="text-align: left;">You notice a scar on your body. Where is
+this scar? Do you remember how you got it?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Queen</strong></td>
+<td style="text-align: left;">You feel pain. Where is the pain coming
+from? What is it caused by?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>King</strong></td>
+<td style="text-align: left;">You are wearing a piece of jewelry. What
+does the jewelry look like? Do you remember why you are wearing it?</td>
+</tr>
+</tbody>
+</table>
+<p><em>Shuffle the three Major Arcana back into the deck.</em></p>
+<h2 id="act-2-swords">Act 2: Swords</h2>
+<p>After getting your bearings, you walk around town. You know this
+town. You know it well, but you cannot remember it.</p>
+<p><em>Draw three cards from the Deck of Swords.</em></p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ace</strong></td>
+<td style="text-align: left;">You take in the sights, sounds, and smells
+of the town around you. How does the town make you feel? Does it feel
+like home?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Two</strong></td>
+<td style="text-align: left;">Your eyes are drawn to a statue. What is
+this statue of? Which emotions does it stir in you?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Three</strong></td>
+<td style="text-align: left;">In front of you walks a couple. They are
+holding hands and smiling. How does seeing this couple make you feel?
+Does it remind you of anyone?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Four</strong></td>
+<td style="text-align: left;">An abandoned building stirs up memories.
+What used to be here? Why did it matter?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Five</strong></td>
+<td style="text-align: left;">Someone on the street recognizes you. How
+do they react when they see you?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Six</strong></td>
+<td style="text-align: left;">People are looking at you and whispering.
+What are they saying?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Seven</strong></td>
+<td style="text-align: left;">You find yourself walking through a
+market. Which stall are you drawn to?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Eight</strong></td>
+<td style="text-align: left;">You pass a place of worship. What is this
+place? How do you feel when you look upon it?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Nine</strong></td>
+<td style="text-align: left;">Someone is having an argument in the
+street. Does this remind you of an argument you’ve had?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Ten</strong></td>
+<td style="text-align: left;">You find yourself wandering through a
+graveyard. What do you find there?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Page</strong></td>
+<td style="text-align: left;">As you walk through a park, you realize
+you’ve been here before. What happened here?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Knight</strong></td>
+<td style="text-align: left;">Someone asks you for directions are you’re
+able to correctly point the way. Where was this person trying to go? Why
+do you know the route so well?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Queen</strong></td>
+<td style="text-align: left;">You pause at a building and realize you
+used to work here. What did you do here? Do you still work here?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>King</strong></td>
+<td style="text-align: left;">You see a child swinging from their
+parents’ arms. How does this sight make you feel?</td>
+</tr>
+</tbody>
+</table>
+<p><em>Shuffle the three Major Arcana back into the deck.</em></p>
+<h2 id="act-3-cups">Act 3: Cups</h2>
+<p>You manage to find your home. The façade is unfamiliar. You fish the
+key out of your pocket and open the door.</p>
+<p><em>Draw three cards from the Deck of Cups.</em></p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ace</strong></td>
+<td style="text-align: left;">You stroll around your home, a place you
+do not remember. Which emotions bubble to the surface?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Two</strong></td>
+<td style="text-align: left;">There are signs that someone else stays
+here (or at least used to stay here). Who is (or was) this person?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Three</strong></td>
+<td style="text-align: left;">You look inside your wastebin. What do you
+find?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Four</strong></td>
+<td style="text-align: left;">A book on your shelf catches your eye.
+Which book is this?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Five</strong></td>
+<td style="text-align: left;">You see notes to yourself lying about.
+What is written on them?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Six</strong></td>
+<td style="text-align: left;">You find an item that was gifted to you.
+What is the item? Who gave it to you?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Seven</strong></td>
+<td style="text-align: left;">The walls are adorned. What is hanging
+from the walls of your home?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Eight</strong></td>
+<td style="text-align: left;">Something has been slipped under your
+door. What is it?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Nine</strong></td>
+<td style="text-align: left;">You stumble upon a collection. What did
+you collect?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Ten</strong></td>
+<td style="text-align: left;">You open a drawer to find a journal. What
+does the final page say?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Page</strong></td>
+<td style="text-align: left;">There is a dent in one of your walls. What
+happened here?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Knight</strong></td>
+<td style="text-align: left;">You find a box that seemed intentionally
+hidden. Where did you find it? What did you store here?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Queen</strong></td>
+<td style="text-align: left;">You find a tucked-away sketchbook and flip
+through its pages. What does the cover look like? What is inside?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>King</strong></td>
+<td style="text-align: left;">An area of your home brings a strong
+memory to the surface. Which memory is this?</td>
+</tr>
+</tbody>
+</table>
+<p><em>Shuffle the three Major Arcana back into the deck.</em></p>
+<h2 id="act-4-wands">Act 4: Wands</h2>
+<p>You have learned much about yourself. Take some time to reflect.</p>
+<p><em>Draw three cards from the Deck of Wands.</em></p>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 86%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>Ace</strong></td>
+<td>You decide to change your appearance. What do you change? Why did
+you make this decision?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Two</strong></td>
+<td>You catch yourself staring into space. What were you thinking
+about?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Three</strong></td>
+<td>There is somewhere in town that beckons you. Which place is this? Do
+you travel there?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Four</strong></td>
+<td>You listen to some music. What are you listening to? How does it
+make you feel?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Five</strong></td>
+<td>You seek out conversation with someone. Who do you reach out to?
+What do you want to discuss?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Six</strong></td>
+<td>Needing a distraction, you seek out some art. What type of art? Why
+are you drawn to it?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Seven</strong></td>
+<td>You destroy one of your belongings. What do you destroy? Why?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Eight</strong></td>
+<td>Exhausted, you lay down to sleep. What do you dream about?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Nine</strong></td>
+<td>You feel as though something is missing. What do you suspect is
+causing this feeling?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Ten</strong></td>
+<td>You realize you are crying. Why?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Page</strong></td>
+<td>You decide to seek company. How do you go about this?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>Knight</strong></td>
+<td>There is something you are desperate to learn. Which question haunts
+you? How do you seek this information?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>Queen</strong></td>
+<td>You sit down to write a letter that you will never send. Who is this
+letter for? What does it say?</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>King</strong></td>
+<td>A memory comes back that you would rather forget. Which memory is
+this? Why does it bother you?</td>
+</tr>
+</tbody>
+</table>
+<p><em>Shuffle the three Major Arcana back into the deck.</em></p>
+<h2 id="act-5">Act 5</h2>
+<p>Your past may shape your experiences, your thoughts, your desires,
+but it does not define you. You are in control of your own path. The
+road ahead may be built from the stones that you’ve gathered, but these
+fragments of your past do not dictate where it leads. It is time to move
+forward.</p>
+<p><em>Return your Shadow to the Major Arcana deck.</em></p>
+<p><strong>Choose one of the Major Arcana to represent your present
+self.</strong></p>
+<p>Do not draw from the deck. Choose freely among the cards. You are in
+charge of your own identity.</p>
+<p>Who are you? What do you do next?</p>
+<hr />
+<h3 id="inspirations">Inspirations</h3>
+<p><a href="https://loottheroom.itch.io/wretched"><em>The
+Wretched</em></a> by <a href="https://www.twitter.com/pangalactic">Chris
+Bissette</a></p>
+<p><a
+href="https://presspotgames.itch.io/the-portal-at-hill-house"><em>The
+Portal at Hill House</em></a> by <a
+href="https://twitter.com/travisdhill">Travis D. Hill</a> and <a
+href="https://mobile.twitter.com/LMFarrisHill">Lindi Farris-Hill</a></p>
+<h3 id="acknowledgements">Acknowledgements</h3>
+<p>Max Alexander and Parker Haviza for playtesting the game, providing
+thoughtful feedback, and listening to me ramble.</p>
+<p><a href="https://twitter.com/eldritchmouse">Ty Pitre</a> for coming
+up with the title of the game and teaching me a new word.</p>
+<p><a href="https://www.twitter.com/viaphonized">Victor Winter</a> for
+brainstorming a couple excellent prompts (Four of Pentacles, Queen of
+Cups).</p>
+<p>The indie TTRPG community for being welcoming, encouraging, and
+inspiring.</p>
+<h3 id="credits">Credits</h3>
+<ul>
+<li><strong>Design/Writing:</strong> <a
+href="https://www.twitter.com/GoblinMixtape">Samantha Leigh</a></li>
+<li><strong>Editing:</strong> <a
+href="https://www.twitter.com/IAmPhophos">Marx Shepherd</a></li>
+<li><strong>Layout:</strong> <a
+href="https://twitter.com/notrueindian">Thomas Manuel</a></li>
+<li><strong>Art:</strong> <a
+href="https://www.twitter.com/viaphonized">Victor Winter</a></li>
+<li><strong>HTML Layout</strong>: <a
+href="https://www.twitter.com/IAmPhophos">Marx Shepherd</a></li>
+</ul>
+<p>Samantha Leigh’s other games can be found at <a
+href="https://blinkingbirchgames.itch.io">blinkingbirchgames.itch.io</a>.</p>
+<h3 id="licensing">Licensing</h3>
+<p>Anamnesis is licensed under a <a
+href="https://creativecommons.org/licenses/by/4.0/">Creative Commons
+Attribution 4.0 International License</a>.</p>
+<p>The PDF version of this game uses <a
+href="https://speakthesky.itch.io/typeface-dicier">the typeface
+Dicier</a>, by <a href="https://twitter.com/SpeakTheSky">Speak the
+Sky</a>, <a href="https://creativecommons.org/licenses/by/4.0/">licensed
+under CC BY 4.0</a>.</p>
+</body>
+</html>
